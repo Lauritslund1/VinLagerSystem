@@ -1,0 +1,21 @@
+﻿<Window x:Class="LagerMonitorDVI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LagerMonitorDVI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Grid Background="#FFFFD7D7">
+        <TextBlock x:Name="Temp" HorizontalAlignment="Left" Height="374" Margin="10,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="944" FontSize="35"><Run Text="Lagesr:"/><LineBreak/><Run Text="Temp:   00,00C"/><LineBreak/><Run Text="Fugt:    00,00%"/><LineBreak/><Run/><LineBreak/><Run Text="Lager:"/><LineBreak/><Run Text="Temp:   00,00C"/><LineBreak/><Run Text="Fugt:    00,00%"/></TextBlock>
+        <TextBlock x:Name="Tid" HorizontalAlignment="Left" Height="399" Margin="10,591,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="944" FontSize="35"><Run Text="Tidszone:"/><LineBreak/><Run Text="Dagdag 00-00-0000  -  00.00.00"/><LineBreak/><LineBreak/><Run Text="Tidszone:"/><LineBreak/><Run Text="Dagdag 00-00-0000  -  00.00.00"/><LineBreak/><Run/><LineBreak/><Run Text="Tidszone:"/><LineBreak/><Run Text="Dagdag 00-00-0000  -  00.00.00"/></TextBlock>
+        <TextBlock x:Name="Maks" HorizontalAlignment="Left" Height="277" Margin="980,374,-12,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="944" FontSize="35"><Run Text="Varer over maksimum:"/><LineBreak/><Run Text="&#x9;"/><Run Text="0 stk. - 1234567  - Navn"/><LineBreak/><Run Text="&#x9;0 stk. - 1234567  - Navn"/></TextBlock>
+        <TextBlock x:Name="Min" HorizontalAlignment="Left" Height="278" Margin="980,91,-12,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="944" FontSize="35"><Run Text="Varer under minimum:"/><LineBreak/><Run Text="&#x9;0 stk. - 1234567  - Navn"/><LineBreak/><Run Text="&#x9;"/><Run Text="0 stk. - 1234567  - Navn"/></TextBlock>
+        <TextBlock x:Name="Solgt" HorizontalAlignment="Left" Height="278" Margin="980,704,-12,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="944" FontSize="35"><Run Text="Mest solgte i dag:"/><LineBreak/><Run Text="&#x9;"/><Run Text="0 stk. - 1234567  - Navn"/><LineBreak/><Run Text="&#x9;0 stk. - 1234567  - Navn"/></TextBlock>
+
+        <Label Content="Temperatur og fugtighed" HorizontalAlignment="Center" Margin="9,0,959,0" VerticalAlignment="Top" Height="75" Width="944" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Lagerstatus" HorizontalAlignment="Left" Margin="970,0,-12,0" VerticalAlignment="Top" Height="75" Width="954" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Dato / Tid" HorizontalAlignment="Center" Margin="10,485,958,0" VerticalAlignment="Top" Height="75" Width="944" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button HorizontalAlignment="Left" Margin="1825,960,0,0" VerticalAlignment="Top" Width="79" Height="80" Click="Button_Click"/>
+    </Grid>
+</Window>
